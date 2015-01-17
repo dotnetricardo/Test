@@ -9,9 +9,9 @@ namespace Plugin
     [Shape("TestPlugin", false)]
     public class TestPlugin
     {
-        public async Task<string> Message(string message)
+        public string Message(string message)
         {
-            return await Task.FromResult(JsonConvert.SerializeObject(new { Message = "Hello From TestPlugin" }));
+            return JsonConvert.SerializeObject(new { Message = "Hello From TestPlugin" });
         }
 
     }
