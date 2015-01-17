@@ -6,12 +6,12 @@ namespace Plugin
 {
     using System.Threading.Tasks;
 
-    [Shape("TestPlugin", false)]
-    public class TestPlugin
+    [Shape("SerializerPlugin", false)]
+    public class SerializerPlugin
     {
-        public string Message(string message)
+        public string Serialize(object obj)
         {
-            return JsonConvert.SerializeObject(new { Message = "Hello From TestPlugin" });
+            return JsonConvert.SerializeObject(obj);
         }
 
     }
