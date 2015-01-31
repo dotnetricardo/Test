@@ -6,7 +6,7 @@ namespace Plugin
 {
     using System.Threading.Tasks;
 
-    [Shape("SerializerPlugin")]
+    [Shape]
     public class SerializerPlugin
     {
         public string Serialize(object obj)
